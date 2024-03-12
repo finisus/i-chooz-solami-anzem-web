@@ -1,0 +1,111 @@
+:root {
+  --base: #000000;
+  --purple: #9945FF;
+  --green: #14F195;
+}
+
+@font-face {
+  font-family: 'Jet';
+  src: url(./metadata/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'JetItalic';
+  src: url(./metadata/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf);
+}
+* {
+  font-family: 'Jet';
+}
+
+/* let page take full heigh of viewport excess */
+html {height: 100%;} body {position: absolute; top:0; bottom:0; right:0; left:0;}
+
+body {
+  background-color: var(--base);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.blob-container {
+  position: absolute; /* Allows absolute positioning for the gradient */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Clip overflowing content */
+  opacity: 99%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 260px;
+  height: 440px;
+  padding: 20px;
+  gap: 24px;
+  border: 1px dotted red;
+  border-radius: 16px;
+  background-color: transparent;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.0),
+                    0 22px 70px 4px rgba(0,0,0,0.44),
+                    0 0 0 1px rgba(0, 0, 0, 0.0);
+}
+.bento-box {
+  display: grid;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#griditem-1 {
+  width: 180px;
+  height: auto;
+  border: 1px dotted red;
+}
+#pfp {
+  width: 100%;
+  height: 100%;
+}
+
+#griditem-2 {
+  width: 90px;
+  height: auto;
+  border: 1px dotted red;
+}
+#tgIcon {
+  width: 100%;
+  height: 100%;
+}
+
+#griditem-3 {
+  width: 90px;
+  height: auto;
+  border: 1px dotted red;
+}
+#twitterIcon {
+  width: 100%;
+  height: 100%;
+}
+
+#griditem-4 {
+  width: 100px;
+  height: auto;
+  border: 1px dotted red;
+}
+#contract {
+  word-break: break-all;
+  writing-mode: vertical-lr;
+  text-orientation:upright;
+  font-size: 12px;
+}
+
+.buttons {
+  background-color: transparent;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px red dotted;
+  color: whitesmoke;
+  cursor: pointer;
+}
