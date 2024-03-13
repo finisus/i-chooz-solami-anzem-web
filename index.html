@@ -6,8 +6,6 @@
   <title>I CHOOZ SOLAMI EZERYTAIM</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MorphSVGPlugin.min.js"></script>
 </head>
 <body>
 
@@ -32,7 +30,13 @@
     <div class="bento-box">
 
       <div id="griditem-1">
-        <img id="pfp" src="./metadata/pfp.jpg" alt="anzem">
+        <div class="action-button-container">
+          <button id="chart-button">Chart</button>
+          <button id="buy-button">Buy</button>
+        </div>
+        <img id="pfp" src="./metadata/pfp.png" alt="anzem">
+        
+        
       </div>
       <div id="griditem-2">
         <img id="tgIcon" src="./metadata/telegramIcon.png" alt="telegram-icon">
@@ -42,13 +46,7 @@
       </div>
       <div id="griditem-4">
         <p id="contract">gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp</p>
-        <button id="copy-button" class="buttons">Copy CA</button>
-      </div>
-      <div id="griditem-5">
-        <button id="chart-button" class="buttons">Chart</button>
-      </div>
-      <div id="griditem-6">
-        <button id="buy-button" class="buttons">Buy</button>
+        <button id="copy-button">Copy CA</button>
       </div>
 
     </div>
