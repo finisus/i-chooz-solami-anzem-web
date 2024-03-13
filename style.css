@@ -75,8 +75,8 @@ main {
   margin-top: 142px;
 }
 #pfp {
-  width: 150px;
-  height: 148px;
+  width: 152px;
+  height: 150px;
   margin-top: 24px;
   border: none;
   border-radius: 6px;
@@ -98,7 +98,7 @@ main {
   border-radius: 6px;
   color: var(--base);
   cursor: pointer;
-  width: auto;
+  width: 74px;
   font-size: 16px;
   font-weight: 900;
 }
@@ -111,7 +111,7 @@ main {
   border-radius: 6px;
   color: var(--base);
   cursor: pointer;
-  width: auto;
+  width: 54px;
   font-size: 16px;
   font-weight: 900;
 }
@@ -187,13 +187,11 @@ main {
   text-orientation:upright;
   border: none;
   top: 0;
-  height: 148px;
+  height: 154px;
+  width: 80px;
   border-radius: 6px;
   margin-top: 0px;
   padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 2px;
-  padding-right: 2px;
   font-size: 10px;
   color: var(--base);
   background-color: rgba(255, 255, 255, 0.77);
