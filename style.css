@@ -11,12 +11,15 @@
 * {
   font-family: 'space';
 }
+@font-face {
+  font-family: 'Jet';
+  src: url(./metadata/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
 
 /* let page take full heigh of viewport excess */
 html {height: 100%;} body {position: absolute; top:0; bottom:0; right:0; left:0;}
 
 body {
-  background-image: url(./metadata/testBack.jpg);
   background-color: var(--base);
   color: whitesmoke;
   display: flex;
@@ -40,9 +43,9 @@ main {
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  width: 258px;
-  height: 350px;
-  padding: 24px;
+  width: 306px;
+  height: 398px;
+  padding: 0;
   border-radius: 6px;
   background-color: transparent;
   backdrop-filter: blur(24px);
@@ -52,11 +55,8 @@ main {
                     0 0 0 1px rgba(0, 0, 0, 0.0);
 }
 .bento-box {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr 2fr;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   gap: 0px;
@@ -64,15 +64,22 @@ main {
   height: 100%;
 }
 
-#griditem-1 {
+.main-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  grid-row: 2;
-  grid-column: 1;
   width: auto;
-  height: 100%;
-  margin-top: 142px;
+  height: auto;
+  bottom: 0;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.action-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 #pfp {
   width: 152px;
@@ -85,22 +92,17 @@ main {
 #pfp:hover {
   background-color: rgba(255, 255, 255, 1.0);
 }
-.action-button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
 #chart-button {
   background-color: rgba(153, 69, 255, 0.69);
   border: none;
   border-radius: 6px;
-  color: var(--base);
+  color: whitesmoke;
   cursor: pointer;
   width: 74px;
+  height: 29px;
   font-size: 16px;
-  font-weight: 700;
+  font-family: 'Jet';
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,8 +118,10 @@ main {
   color: var(--base);
   cursor: pointer;
   width: 54px;
+  height: 29px;
   font-size: 16px;
-  font-weight: 700;
+  font-family: 'Jet';
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,13 +131,19 @@ main {
   background-color: rgba(20, 241, 149, 1.0);
 }
 
-#griditem-2 {
-  cursor: pointer;
+.socials {
+  position: absolute;
+  top: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
   display: flex;
   flex-direction: row;
-  grid-row: 1;
-  grid-column: 1;
-  position: absolute;
+  gap: 24px;
+}
+
+#griditem-2 {
+  cursor: pointer;
   width: 69px;
   height: 69px;
   padding: 24px;
@@ -151,16 +161,9 @@ main {
 
 #griditem-3 {
   cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  grid-row: 1;
-  grid-column: 2;
-  position: absolute;
-  right: 0;
-  padding: 24px;
-  margin-right: 24px;
   width: 69px;
   height: 69px;
+  padding: 24px;
   background-color: rgba(255, 255, 255, 0.77);
   border-radius: 6px;
 }
@@ -173,20 +176,21 @@ main {
   opacity: 1.0;
 }
 
-#griditem-4 {
+.contract-container {
   position: absolute;
-  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 22px;
   grid-row: 2;
   grid-column: span 2;
   width: 60px;
   padding: 12px;
-  margin-top: 142px;
   height: calc(100% - 218px);
+  bottom: 0;
+  right: 0;
+  margin-bottom: 24px;
+  margin-right: 24px;
 }
 #contract {
   position: absolute;
@@ -198,7 +202,6 @@ main {
   height: 154px;
   width: 80px;
   border-radius: 6px;
-  margin-top: 0px;
   padding-top: 4px;
   font-size: 10px;
   color: var(--base);
@@ -223,7 +226,8 @@ main {
   border: none;
   border-radius: 6px;
   font-size: 11px;
-  font-weight: 700;
+  font-family: 'Jet';
+  font-weight: 500;
   color: var(--base);
   background-color: rgba(255, 255, 255, 0.77);
 }
