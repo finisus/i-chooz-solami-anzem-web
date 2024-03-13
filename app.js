@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp', '_blank');
   });
   tgButton.addEventListener('click', function() {
-    window.open('https://t.me/', '_blank');
+    window.open('https://t.me/AnzemSOL', '_blank');
   });
   twitterButton.addEventListener('click', function() {
     window.open('https://twitter.com/AnzemSOL', '_blank');
