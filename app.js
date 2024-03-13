@@ -56,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
         line.style.transform = `translateX(${newX}px)`; 
     });
    
-    setTimeout(updateScroll, 30);  // Shorter delay for smooth scrolling 
+    setTimeout(updateScroll, 33);  // Shorter delay for smooth scrolling 
   }
 
   // Move scroll-rl elements off-screen to the left
   const scrollRLSpans = document.querySelectorAll('.scroll-rl');
   scrollRLSpans.forEach(span => {
-      span.style.transform = `translateX(-4900%)`; // Move off-screen to the left
+      span.style.transform = `translateX(-1690%)`; // Move off-screen to the left
   });
 
   updateScroll(); // Start the animation
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://t.me/', '_blank');
   });
   twitterButton.addEventListener('click', function() {
-    window.open('https://x.com/finisusdoteth', '_blank');
+    window.open('https://twitter.com/AnzemSOL', '_blank');
   });
   // copy button logic
   const copyButton = document.getElementById("copy-button");

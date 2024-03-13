@@ -86,6 +86,14 @@ main {
   align-items: center;
   gap: 24px;
 }
+#tickerText {
+  position: absolute;
+  margin-top: 156px;
+  margin-left: 4px;
+  display: block;
+  width: 152px;
+  height: 152px;
+}
 #pfp {
   width: 152px;
   height: 152px;
