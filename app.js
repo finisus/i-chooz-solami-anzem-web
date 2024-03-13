@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let duplicatedText = originalText; // Start with original text
 
         // Duplicate the text 20 times and append it behind the original text
-        for (let i = 0; i < 690; i++) {
+        for (let i = 0; i < 369; i++) {
             duplicatedText += ' ' + originalText;
         }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let duplicatedText = originalText; // Start with original text
 
         // Duplicate the text 20 times and append it ahead of the original text
-        for (let i = 0; i < 690; i++) {
+        for (let i = 0; i < 369; i++) {
             duplicatedText = originalText + ' ' + duplicatedText;
         }
 
