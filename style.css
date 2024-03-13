@@ -48,9 +48,9 @@ main {
   height: 398px;
   padding: 0;
   border-radius: 6px;
-  background: -moz-linear-gradient(180deg, rgba(2,0,36,0.44) 0%, rgba(184,124,221,0.44) 0%, rgba(20,241,149,0.44) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(2,0,36,0.44) 0%, rgba(184,124,221,0.44) 0%, rgba(20,241,149,0.44) 100%);
-  background: linear-gradient(180deg, rgba(2,0,36,0.44) 0%, rgba(184,124,221,0.44) 0%, rgba(20,241,149,0.44) 100%);
+  background: -moz-linear-gradient(180deg, rgba(2,0,36,0.3) 0%, rgba(184,124,221,0.3) 0%, rgba(20,241,149,0.3) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(2,0,36,0.3) 0%, rgba(184,124,221,0.3) 0%, rgba(20,241,149,0.3) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,0.3) 0%, rgba(184,124,221,0.3) 0%, rgba(20,241,149,0.3) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#14f195",GradientType=1);
 
   backdrop-filter: blur(12px);
@@ -254,7 +254,7 @@ main {
 #lines {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -265,7 +265,7 @@ main {
 #lines span {
   font-family: 'space';
   font-weight: 500;
-  font-size: 26px;
+  font-size: 24px;
   display: inline-block;
   word-break: break-all;
 }
@@ -277,7 +277,10 @@ main {
   color: var(--lightPurple);
 }
 @media screen and (max-width: 659px) {
+  #lines {
+    gap: 16px;
+  }
   #lines span {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

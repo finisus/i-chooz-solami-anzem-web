@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let duplicatedText = originalText; // Start with original text
 
         // Duplicate the text 20 times and append it behind the original text
-        for (let i = 0; i < 444; i++) {
+        for (let i = 0; i < 690; i++) {
             duplicatedText += ' ' + originalText;
         }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let duplicatedText = originalText; // Start with original text
 
         // Duplicate the text 20 times and append it ahead of the original text
-        for (let i = 0; i < 444; i++) {
+        for (let i = 0; i < 690; i++) {
             duplicatedText = originalText + ' ' + duplicatedText;
         }
 
@@ -37,27 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Call the function to duplicate text for scroll-lr elements
   duplicateTextForScrollLR();
-  
-  const copyButton = document.getElementById("copy-button");
-  const textToCopy = "gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp";
-  copyButton.addEventListener("click", async () => {
-    try {
-      // Try the modern Clipboard API first (if supported)
-      await navigator.clipboard.writeText(textToCopy);
-      console.log("Text copied successfully using Clipboard API");
-    } catch (err) {
-      // If Clipboard API fails, use the legacy approach
-      const textArea = document.createElement("textarea");
-      textArea.value = textToCopy;
-      textArea.style.position = "fixed"; // Hide element off-screen
-      textArea.style.left = "-9999px";
-      document.body.appendChild(textArea);
-      textArea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textArea);
-      console.log("Text copied successfully using legacy approach");
-    }
-  });
 
   const linesContainer = document.getElementById('lines');
   const textLines = linesContainer.querySelectorAll('span');
@@ -87,4 +66,43 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   updateScroll(); // Start the animation
+
+  // BUTTONS
+  const tgButton = document.getElementById("griditem-2");
+  const twitterButton = document.getElementById("griditem-3");
+  const chartButton = document.getElementById("chart-button");
+  const buyButton = document.getElementById("buy-button");
+  chartButton.addEventListener('click', function() {
+    window.open('https://dexscreener.com/solana/cp6jydb4bwdzhbwqjpcxenknembm6qccetqdmuzf8t4u', '_blank');
+  });
+  buyButton.addEventListener('click', function() {
+    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp', '_blank');
+  });
+  tgButton.addEventListener('click', function() {
+    window.open('https://t.me/', '_blank');
+  });
+  twitterButton.addEventListener('click', function() {
+    window.open('https://x.com/finisusdoteth', '_blank');
+  });
+  // copy button logic
+  const copyButton = document.getElementById("copy-button");
+  const textToCopy = "gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp";
+  copyButton.addEventListener("click", async () => {
+    try {
+      // Try the modern Clipboard API first (if supported)
+      await navigator.clipboard.writeText(textToCopy);
+      console.log("Text copied successfully using Clipboard API");
+    } catch (err) {
+      // If Clipboard API fails, use the legacy approach
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      textArea.style.position = "fixed"; // Hide element off-screen
+      textArea.style.left = "-9999px";
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      console.log("Text copied successfully using legacy approach");
+    }
+  });
 });
