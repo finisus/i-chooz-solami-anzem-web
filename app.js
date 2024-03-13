@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let duplicatedText = originalText; // Start with original text
 
         // Duplicate the text 20 times and append it behind the original text
-        for (let i = 0; i < 2000; i++) {
+        for (let i = 0; i < 690; i++) {
             duplicatedText += ' ' + originalText;
         }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let duplicatedText = originalText; // Start with original text
 
         // Duplicate the text 20 times and append it ahead of the original text
-        for (let i = 0; i < 2000; i++) {
+        for (let i = 0; i < 690; i++) {
             duplicatedText = originalText + ' ' + duplicatedText;
         }
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         line.style.transform = `translateX(${newX}px)`; 
     });
    
-    setTimeout(updateScroll, 30);  // Shorter delay for smooth scrolling 
+    setTimeout(updateScroll, 20);  // Shorter delay for smooth scrolling 
   }
 
   // Move scroll-rl elements off-screen to the left
