@@ -1,6 +1,7 @@
 :root {
   --base: #000000;
   --purple: #9945FF;
+  --lightPurple: #bd84e0;
   --green: #14F195;
 }
 
@@ -47,11 +48,15 @@ main {
   height: 398px;
   padding: 0;
   border-radius: 6px;
-  background-color: transparent;
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background: -moz-linear-gradient(180deg, rgba(2,0,36,0.44) 0%, rgba(184,124,221,0.44) 0%, rgba(20,241,149,0.44) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(2,0,36,0.44) 0%, rgba(184,124,221,0.44) 0%, rgba(20,241,149,0.44) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,0.44) 0%, rgba(184,124,221,0.44) 0%, rgba(20,241,149,0.44) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#14f195",GradientType=1);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.0),
-                    0 22px 70px 4px rgba(0,0,0,0.44),
+                    0 22px 70px 4px rgba(0,0,0,0.5),
                     0 0 0 1px rgba(0, 0, 0, 0.0);
 }
 .bento-box {
@@ -93,10 +98,11 @@ main {
   background-color: rgba(255, 255, 255, 1.0);
 }
 #chart-button {
-  background-color: rgba(153, 69, 255, 0.69);
+  background-color: rgba(189, 132, 224, 0.8);
   border: none;
   border-radius: 6px;
-  color: whitesmoke;
+  border: 2px solid var(--lightPurple);
+  color: white;
   cursor: pointer;
   width: 74px;
   height: 29px;
@@ -109,12 +115,13 @@ main {
   text-align: center;
 }
 #chart-button:hover {
-  background-color: rgba(153, 69, 255, 1.0);
+  background-color: rgba(189, 132, 224, 1.0);
 }
 #buy-button {
-  background-color: rgba(20, 241, 149, 0.69);
+  background-color: rgba(20, 241, 149, 0.8);
   border: none;
   border-radius: 6px;
+  border: 2px solid var(--green);
   color: var(--base);
   cursor: pointer;
   width: 54px;
@@ -229,11 +236,48 @@ main {
   font-family: 'Jet';
   font-weight: 500;
   color: var(--base);
-  background-color: rgba(255, 255, 255, 0.77);
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #copy-button:hover {
   background-color: rgba(255, 255, 255, 1.0);
 }
 #copy-button:active {
-  background-color: rgba(255, 255, 255, 0.77);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/*-------------------------
+  Lines Background
+-------------------------*/
+
+#lines {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#lines span {
+  font-family: 'space';
+  font-weight: 500;
+  font-size: 26px;
+  display: inline-block;
+  word-break: break-all;
+}
+
+.scroll-lr {
+  color: var(--green);
+}
+.scroll-rl {
+  color: var(--lightPurple);
+}
+@media screen and (max-width: 659px) {
+  #lines span {
+    font-size: 18px;
+  }
 }
