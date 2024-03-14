@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const chartButton = document.getElementById("chart-button");
   const buyButton = document.getElementById("buy-button");
   chartButton.addEventListener('click', function() {
-    window.open('https://dexscreener.com/solana/cp6jydb4bwdzhbwqjpcxenknembm6qccetqdmuzf8t4u', '_blank');
+    window.open('https://dexscreener.com/solana/gth9yuugnv6czt9nhslm7wlzohs2bnvubkglm8sme7ph', '_blank');
   });
   buyButton.addEventListener('click', function() {
-    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp', '_blank');
+    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=8G4pmmf1hDWYikSJzNgM28yucsdPXZfeKRXKprA8D92h', '_blank');
   });
   tgButton.addEventListener('click', function() {
     window.open('https://t.me/AnzemSOL', '_blank');
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   // copy button logic
   const copyButton = document.getElementById("copy-button");
-  const textToCopy = "gXXJt8cEa3NoZmc8jMgCLWeSjMQbVxuWYQ26LA9DHbp";
+  const textToCopy = "8G4pmmf1hDWYikSJzNgM28yucsdPXZfeKRXKprA8D92h";
   copyButton.addEventListener("click", async () => {
     try {
       // Try the modern Clipboard API first (if supported)
