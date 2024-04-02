@@ -73,20 +73,20 @@ document.addEventListener('DOMContentLoaded', function() {
   const chartButton = document.getElementById("chart-button");
   const buyButton = document.getElementById("buy-button");
   chartButton.addEventListener('click', function() {
-    window.open('https://dexscreener.com/solana/gth9yuugnv6czt9nhslm7wlzohs2bnvubkglm8sme7ph', '_blank');
+    window.open('https://dexscreener.com/solana/', '_blank');
   });
   buyButton.addEventListener('click', function() {
-    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=8G4pmmf1hDWYikSJzNgM28yucsdPXZfeKRXKprA8D92h', '_blank');
+    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=', '_blank');
   });
   tgButton.addEventListener('click', function() {
-    window.open('https://t.me/AnzemSOL', '_blank');
+    window.open('https://t.me/AnzemSolana', '_blank');
   });
   twitterButton.addEventListener('click', function() {
-    window.open('https://twitter.com/AnzemSOL', '_blank');
+    window.open('https://twitter.com/AnzemSolana', '_blank');
   });
   // copy button logic
   const copyButton = document.getElementById("copy-button");
-  const textToCopy = "8G4pmmf1hDWYikSJzNgM28yucsdPXZfeKRXKprA8D92h";
+  const textToCopy = "xxxxxxx";
   copyButton.addEventListener("click", async () => {
     try {
       // Try the modern Clipboard API first (if supported)
