@@ -75,8 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
   chartButton.addEventListener('click', function() {
     window.open('https://dexscreener.com/solana/', '_blank');
   });
+  /*
   buyButton.addEventListener('click', function() {
     window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=', '_blank');
+  });
+  */
+  buyButton.addEventListener('click', function() {
+    window.open('https://www.pump.fun/DaTtxepuG7Su446miDskXuUqgLyvm29U2XKHyJVhYqUx', '_blank');
   });
   tgButton.addEventListener('click', function() {
     window.open('https://t.me/AnzemSolana', '_blank');
@@ -86,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   // copy button logic
   const copyButton = document.getElementById('copy-ca-button');
-  const textToCopy = "xxxxxxxxxx";
+  const textToCopy = "DaTtxepuG7Su446miDskXuUqgLyvm29U2XKHyJVhYqUx";
   copyButton.addEventListener("click", async () => {
     try {
       // Try the modern Clipboard API first (if supported)
